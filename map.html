@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <style>#map_4ead44fe38d14c11afa5ccaece865b34 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+    
+            <style> #vega_289e3624be974559a0985578286a9906 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vega/1.4.3/vega.min.js"></script>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_4ead44fe38d14c11afa5ccaece865b34" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_4ead44fe38d14c11afa5ccaece865b34 = L.map(
+        'map_4ead44fe38d14c11afa5ccaece865b34', {
+        center: [42.3601, -71.0589],
+        zoom: 12,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_c0dbaef3723941ea900ddf752c456c9a = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "subdomains": "abc"
+}).addTo(map_4ead44fe38d14c11afa5ccaece865b34);
+    
+        var marker_b4d80458dfa94452a7056470193079e1 = L.marker(
+            [42.3636, -71.0995],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4ead44fe38d14c11afa5ccaece865b34);
+        
+    
+            var popup_c53e013607d541a891c2897d5c685a62 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_fbf538f836724f2ebd88eaa6b923cd4f = $('<div id="html_fbf538f836724f2ebd88eaa6b923cd4f" style="width: 100.0%; height: 100.0%;"><strong>Location One</strong></div>')[0];
+                popup_c53e013607d541a891c2897d5c685a62.setContent(html_fbf538f836724f2ebd88eaa6b923cd4f);
+            
+
+            marker_b4d80458dfa94452a7056470193079e1.bindPopup(popup_c53e013607d541a891c2897d5c685a62)
+            ;
+
+            
+        
+    
+        marker_b4d80458dfa94452a7056470193079e1.bindTooltip(
+            '<div>'
+            + 'Click For More Info' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_54cd320f57ab442ea2d371f747bbcab3 = L.marker(
+            [42.3336, -71.1095],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4ead44fe38d14c11afa5ccaece865b34);
+        
+    
+
+                var icon_6974de52f1424ca9925a092b511cc829 = L.AwesomeMarkers.icon({
+                    icon: 'cloud',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_54cd320f57ab442ea2d371f747bbcab3.setIcon(icon_6974de52f1424ca9925a092b511cc829);
+            
+    
+            var popup_4bc8fad705874be2aad2de6b29211b08 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_84a1e5d2a3e744d295747c2e13ee7cd8 = $('<div id="html_84a1e5d2a3e744d295747c2e13ee7cd8" style="width: 100.0%; height: 100.0%;"><strong>Location Two</strong></div>')[0];
+                popup_4bc8fad705874be2aad2de6b29211b08.setContent(html_84a1e5d2a3e744d295747c2e13ee7cd8);
+            
+
+            marker_54cd320f57ab442ea2d371f747bbcab3.bindPopup(popup_4bc8fad705874be2aad2de6b29211b08)
+            ;
+
+            
+        
+    
+        marker_54cd320f57ab442ea2d371f747bbcab3.bindTooltip(
+            '<div>'
+            + 'Click For More Info' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_0af0e12b4627475b82018b450e987e04 = L.marker(
+            [42.37712, -71.0624],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4ead44fe38d14c11afa5ccaece865b34);
+        
+    
+
+                var icon_936364efed364a758705765bd446615c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'purple',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0af0e12b4627475b82018b450e987e04.setIcon(icon_936364efed364a758705765bd446615c);
+            
+    
+            var popup_fd18c7de2707425995f4d1d553774606 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f6256a4ee5034bda813e86c7e513082b = $('<div id="html_f6256a4ee5034bda813e86c7e513082b" style="width: 100.0%; height: 100.0%;"><strong>Location Three</strong></div>')[0];
+                popup_fd18c7de2707425995f4d1d553774606.setContent(html_f6256a4ee5034bda813e86c7e513082b);
+            
+
+            marker_0af0e12b4627475b82018b450e987e04.bindPopup(popup_fd18c7de2707425995f4d1d553774606)
+            ;
+
+            
+        
+    
+        marker_0af0e12b4627475b82018b450e987e04.bindTooltip(
+            '<div>'
+            + 'Click For More Info' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_15c40aff28b74e61917a935cc4902ca0 = L.marker(
+            [42.37415, -71.12241],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4ead44fe38d14c11afa5ccaece865b34);
+        
+    
+
+                var icon_cb9830c64935414bbe3b7c34f2419b43 = L.AwesomeMarkers.icon({
+                    icon: 'leaf',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_15c40aff28b74e61917a935cc4902ca0.setIcon(icon_cb9830c64935414bbe3b7c34f2419b43);
+            
+    
+            var popup_3df73a28ddec4e26865588b844b1085a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d7e1d9d4dc8f422aa72970044009fa74 = $('<div id="html_d7e1d9d4dc8f422aa72970044009fa74" style="width: 100.0%; height: 100.0%;"><strong>Location Four</strong></div>')[0];
+                popup_3df73a28ddec4e26865588b844b1085a.setContent(html_d7e1d9d4dc8f422aa72970044009fa74);
+            
+
+            marker_15c40aff28b74e61917a935cc4902ca0.bindPopup(popup_3df73a28ddec4e26865588b844b1085a)
+            ;
+
+            
+        
+    
+        marker_15c40aff28b74e61917a935cc4902ca0.bindTooltip(
+            '<div>'
+            + 'Click For More Info' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_a0d3ba8696c04082a9644f25c73f7789 = L.marker(
+            [42.37514, -71.03245],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4ead44fe38d14c11afa5ccaece865b34);
+        
+    
+
+                var custom_icon_ad4e1f1c1492432ab4014be347796acf = L.icon({
+                    iconUrl: 'logo.png',
+                    iconSize: [50,50],
+                    
+
+                    
+                    
+                    
+
+                    
+                    });
+                marker_a0d3ba8696c04082a9644f25c73f7789.setIcon(custom_icon_ad4e1f1c1492432ab4014be347796acf);
+            
+    
+            var popup_233e882e47c64290a6965b54d8044260 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6044b9ec5e7c421ba05371212a06cce1 = $('<div id="html_6044b9ec5e7c421ba05371212a06cce1" style="width: 100.0%; height: 100.0%;"><strong>Location Five</strong></div>')[0];
+                popup_233e882e47c64290a6965b54d8044260.setContent(html_6044b9ec5e7c421ba05371212a06cce1);
+            
+
+            marker_a0d3ba8696c04082a9644f25c73f7789.bindPopup(popup_233e882e47c64290a6965b54d8044260)
+            ;
+
+            
+        
+    
+        marker_a0d3ba8696c04082a9644f25c73f7789.bindTooltip(
+            '<div>'
+            + 'Click For More Info' + '</div>',
+            {"sticky": true}
+        );
+        
+    
+        var marker_56e58713970844bd8e924fc5e19fd54d = L.marker(
+            [42.31514, -71.07245],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_4ead44fe38d14c11afa5ccaece865b34);
+        
+    function vega_parse(spec, div) {
+            vg.parse.spec(spec, function(chart) { chart({el:div}).update(); });}
+    
+            var popup_c81900212b7c4e4596df0b724d2e29fe = L.popup({maxWidth: '450'
+            
+            });
+
+            
+                var vega_289e3624be974559a0985578286a9906 = $('             <div id="vega_289e3624be974559a0985578286a9906"></div>             ')[0];
+                popup_c81900212b7c4e4596df0b724d2e29fe.setContent(vega_289e3624be974559a0985578286a9906);
+            
+
+            marker_56e58713970844bd8e924fc5e19fd54d.bindPopup(popup_c81900212b7c4e4596df0b724d2e29fe)
+            ;
+
+            
+                
+            vega_parse({"axes": [{"scale": "x", "title": "Time", "type": "x"}, {"scale": "y", "title": "Dominant Wave Period (s)", "type": "y"}], "data": [{"name": "table", "values": [{"col": "dominant_wave_period (s)", "idx": 1366257000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366260600000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1366264200000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366267800000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1366271400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366275000000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1366278600000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1366282200000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1366285800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366289400000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366293000000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366300200000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1366303800000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1366307400000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1366311000000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1366314600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366318200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366321800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366325400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366329000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366332600000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1366336200000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1366339800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366343400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366347000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366350600000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366354200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366357800000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366361400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366365000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366368600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366372200000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366375800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366379400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366383000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366386600000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366390200000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366393800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366397400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366401000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366404600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366408200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366411800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366415400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366419000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366422600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366426200000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366429800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366433400000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366437000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366440600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366444200000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366447800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366451400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366455000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366458600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366462200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366465800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366469400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366473000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366476600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366480200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366483800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366487400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366491000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366494600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366498200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366501800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366505400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366509000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366512600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366516200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366519800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366523400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366527000000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366530600000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366534200000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1366537800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366541400000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366545000000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366548600000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366552200000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366559400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366563000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366566600000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366570200000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1366573800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366577400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366581000000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366584600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366588200000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1366591800000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1366595400000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366599000000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366602600000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366606200000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366609800000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366613400000, "val": 5.0}, {"col": "dominant_wave_period (s)", "idx": 1366617000000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366620600000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366624200000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366627800000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366631400000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1366635000000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1366638600000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1366642200000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1366645800000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366649400000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1366653000000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366656600000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1366660200000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366663800000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1366667400000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1366671000000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1366674600000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366678200000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1366681800000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366685400000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1366689000000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1366692600000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366696200000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1366699800000, "val": 4.0}, {"col": "dominant_wave_period (s)", "idx": 1366703400000, "val": 4.0}, {"col": "dominant_wave_period (s)", "idx": 1366707000000, "val": 4.0}, {"col": "dominant_wave_period (s)", "idx": 1366710600000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1366714200000, "val": 4.0}, {"col": "dominant_wave_period (s)", "idx": 1366717800000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1366721400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366725000000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1366728600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366732200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366735800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366739400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366743000000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1366746600000, "val": 13.0}, {"col": "dominant_wave_period (s)", "idx": 1366750200000, "val": 12.0}, {"col": "dominant_wave_period (s)", "idx": 1366753800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366757400000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1366761000000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1366764600000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1366768200000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1366771800000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1366775400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366779000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366782600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366786200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366789800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366793400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366797000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366800600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366804200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366807800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366811400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366818600000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366822200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366829400000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366833000000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366836600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366840200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366843800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366847400000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366851000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366854600000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366858200000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366861800000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1366865400000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1366869000000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1366872600000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1366876200000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1366879800000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1366883400000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1366887000000, "val": 4.0}, {"col": "dominant_wave_period (s)", "idx": 1366890600000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1366894200000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1366897800000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1366901400000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1366905000000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1366908600000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366912200000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366915800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366919400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366923000000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366926600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366930200000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366933800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1366937400000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366941000000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366944600000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366948200000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366951800000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366955400000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366959000000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366962600000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1366966200000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366969800000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1366973400000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366977000000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1366980600000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1366984200000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1366987800000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1366991400000, "val": 14.0}, {"col": "dominant_wave_period (s)", "idx": 1366995000000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1366998600000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1367002200000, "val": 14.0}, {"col": "dominant_wave_period (s)", "idx": 1367005800000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1367009400000, "val": 14.0}, {"col": "dominant_wave_period (s)", "idx": 1367013000000, "val": 14.0}, {"col": "dominant_wave_period (s)", "idx": 1367016600000, "val": 15.0}, {"col": "dominant_wave_period (s)", "idx": 1367020200000, "val": 14.0}, {"col": "dominant_wave_period (s)", "idx": 1367023800000, "val": 14.0}, {"col": "dominant_wave_period (s)", "idx": 1367027400000, "val": 15.0}, {"col": "dominant_wave_period (s)", "idx": 1367031000000, "val": 14.0}, {"col": "dominant_wave_period (s)", "idx": 1367034600000, "val": 14.0}, {"col": "dominant_wave_period (s)", "idx": 1367038200000, "val": 15.0}, {"col": "dominant_wave_period (s)", "idx": 1367041800000, "val": 14.0}, {"col": "dominant_wave_period (s)", "idx": 1367045400000, "val": 14.0}, {"col": "dominant_wave_period (s)", "idx": 1367049000000, "val": 16.0}, {"col": "dominant_wave_period (s)", "idx": 1367052600000, "val": 13.0}, {"col": "dominant_wave_period (s)", "idx": 1367056200000, "val": 13.0}, {"col": "dominant_wave_period (s)", "idx": 1367059800000, "val": 14.0}, {"col": "dominant_wave_period (s)", "idx": 1367063400000, "val": 13.0}, {"col": "dominant_wave_period (s)", "idx": 1367067000000, "val": 15.0}, {"col": "dominant_wave_period (s)", "idx": 1367070600000, "val": 14.0}, {"col": "dominant_wave_period (s)", "idx": 1367077800000, "val": 14.0}, {"col": "dominant_wave_period (s)", "idx": 1367081400000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367085000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367088600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367092200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367095800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367099400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367103000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367106600000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1367110200000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367113800000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1367117400000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367121000000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367124600000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367128200000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367131800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367135400000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367139000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367142600000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367146200000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367149800000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367153400000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367157000000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367160600000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367164200000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367167800000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367171400000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367175000000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367178600000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367182200000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367185800000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367189400000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367193000000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367196600000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367200200000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367203800000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367207400000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367211000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367214600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367218200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367221800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367225400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367229000000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367232600000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1367236200000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367239800000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1367243400000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367247000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367250600000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367254200000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367257800000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367261400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367265000000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367268600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367272200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367275800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367279400000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367283000000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367286600000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367290200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367293800000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367297400000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367301000000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367304600000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367308200000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1367311800000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1367315400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367319000000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1367322600000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1367326200000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1367329800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367337000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367340600000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367344200000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367347800000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1367351400000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367355000000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367358600000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367362200000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1367365800000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1367369400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367373000000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367376600000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367380200000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1367383800000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367387400000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367391000000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367394600000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367398200000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367401800000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367405400000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367409000000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367412600000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367416200000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367419800000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367423400000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367427000000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367430600000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367434200000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367437800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367441400000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367445000000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367448600000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367452200000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367455800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367459400000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367463000000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367466600000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367470200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367473800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367477400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367481000000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367484600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367488200000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367491800000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367495400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367499000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367502600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367506200000, "val": 15.0}, {"col": "dominant_wave_period (s)", "idx": 1367509800000, "val": 16.0}, {"col": "dominant_wave_period (s)", "idx": 1367513400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367517000000, "val": 17.0}, {"col": "dominant_wave_period (s)", "idx": 1367520600000, "val": 16.0}, {"col": "dominant_wave_period (s)", "idx": 1367524200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367527800000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1367531400000, "val": 14.0}, {"col": "dominant_wave_period (s)", "idx": 1367535000000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1367538600000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1367542200000, "val": 14.0}, {"col": "dominant_wave_period (s)", "idx": 1367545800000, "val": 4.0}, {"col": "dominant_wave_period (s)", "idx": 1367549400000, "val": 4.0}, {"col": "dominant_wave_period (s)", "idx": 1367553000000, "val": 5.0}, {"col": "dominant_wave_period (s)", "idx": 1367556600000, "val": 4.0}, {"col": "dominant_wave_period (s)", "idx": 1367560200000, "val": 5.0}, {"col": "dominant_wave_period (s)", "idx": 1367563800000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1367571000000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1367574600000, "val": 5.0}, {"col": "dominant_wave_period (s)", "idx": 1367578200000, "val": 5.0}, {"col": "dominant_wave_period (s)", "idx": 1367581800000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1367585400000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367589000000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1367592600000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1367596200000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367599800000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1367603400000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367607000000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367610600000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1367614200000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367617800000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367621400000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367625000000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367628600000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367632200000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367635800000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367639400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367643000000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367646600000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367650200000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367653800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367657400000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367661000000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367664600000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367668200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367671800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367675400000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367679000000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367682600000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367686200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367689800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367693400000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367697000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367700600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367704200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367707800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367711400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367715000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367718600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367722200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367725800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367729400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367733000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367736600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367740200000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367743800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367747400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367751000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367754600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367758200000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367761800000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367765400000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367769000000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1367772600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367776200000, "val": 14.0}, {"col": "dominant_wave_period (s)", "idx": 1367779800000, "val": 13.0}, {"col": "dominant_wave_period (s)", "idx": 1367783400000, "val": 14.0}, {"col": "dominant_wave_period (s)", "idx": 1367787000000, "val": 13.0}, {"col": "dominant_wave_period (s)", "idx": 1367790600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367794200000, "val": 14.0}, {"col": "dominant_wave_period (s)", "idx": 1367797800000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367801400000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367805000000, "val": 13.0}, {"col": "dominant_wave_period (s)", "idx": 1367808600000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367812200000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367815800000, "val": 13.0}, {"col": "dominant_wave_period (s)", "idx": 1367819400000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367823000000, "val": 13.0}, {"col": "dominant_wave_period (s)", "idx": 1367826600000, "val": 13.0}, {"col": "dominant_wave_period (s)", "idx": 1367830200000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1367833800000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1367837400000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1367841000000, "val": 12.0}, {"col": "dominant_wave_period (s)", "idx": 1367844600000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367848200000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367851800000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367855400000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367859000000, "val": 12.0}, {"col": "dominant_wave_period (s)", "idx": 1367862600000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1367866200000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1367869800000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367873400000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367877000000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1367880600000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367884200000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367887800000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367891400000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367895000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367898600000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367902200000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367905800000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1367909400000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1367913000000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1367916600000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1367920200000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367923800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367927400000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1367931000000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1367934600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367938200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367941800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367945400000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367949000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367952600000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367956200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367959800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367963400000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367967000000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367970600000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367974200000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367977800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367981400000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367985000000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367988600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367992200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1367995800000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1367999400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368003000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368006600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368010200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368013800000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368017400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368021000000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368024600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368028200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368031800000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368035400000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368039000000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368042600000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368046200000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368049800000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368053400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368057000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368060600000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368064200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368067800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368071400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368075000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368078600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368082200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368085800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368089400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368093000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368096600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368100200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368103800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368107400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368111000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368114600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368118200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368121800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368125400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368129000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368132600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368136200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368139800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368143400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368147000000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1368150600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368154200000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1368157800000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1368161400000, "val": 16.0}, {"col": "dominant_wave_period (s)", "idx": 1368165000000, "val": 3.0}, {"col": "dominant_wave_period (s)", "idx": 1368168600000, "val": 4.0}, {"col": "dominant_wave_period (s)", "idx": 1368172200000, "val": 4.0}, {"col": "dominant_wave_period (s)", "idx": 1368175800000, "val": 4.0}, {"col": "dominant_wave_period (s)", "idx": 1368179400000, "val": 4.0}, {"col": "dominant_wave_period (s)", "idx": 1368183000000, "val": 3.0}, {"col": "dominant_wave_period (s)", "idx": 1368186600000, "val": 3.0}, {"col": "dominant_wave_period (s)", "idx": 1368190200000, "val": 16.0}, {"col": "dominant_wave_period (s)", "idx": 1368193800000, "val": 4.0}, {"col": "dominant_wave_period (s)", "idx": 1368197400000, "val": 13.0}, {"col": "dominant_wave_period (s)", "idx": 1368201000000, "val": 16.0}, {"col": "dominant_wave_period (s)", "idx": 1368204600000, "val": 16.0}, {"col": "dominant_wave_period (s)", "idx": 1368208200000, "val": 5.0}, {"col": "dominant_wave_period (s)", "idx": 1368211800000, "val": 16.0}, {"col": "dominant_wave_period (s)", "idx": 1368215400000, "val": 16.0}, {"col": "dominant_wave_period (s)", "idx": 1368219000000, "val": 16.0}, {"col": "dominant_wave_period (s)", "idx": 1368222600000, "val": 16.0}, {"col": "dominant_wave_period (s)", "idx": 1368226200000, "val": 16.0}, {"col": "dominant_wave_period (s)", "idx": 1368229800000, "val": 14.0}, {"col": "dominant_wave_period (s)", "idx": 1368233400000, "val": 16.0}, {"col": "dominant_wave_period (s)", "idx": 1368237000000, "val": 16.0}, {"col": "dominant_wave_period (s)", "idx": 1368240600000, "val": 16.0}, {"col": "dominant_wave_period (s)", "idx": 1368244200000, "val": 14.0}, {"col": "dominant_wave_period (s)", "idx": 1368247800000, "val": 15.0}, {"col": "dominant_wave_period (s)", "idx": 1368251400000, "val": 16.0}, {"col": "dominant_wave_period (s)", "idx": 1368255000000, "val": 16.0}, {"col": "dominant_wave_period (s)", "idx": 1368258600000, "val": 15.0}, {"col": "dominant_wave_period (s)", "idx": 1368262200000, "val": 16.0}, {"col": "dominant_wave_period (s)", "idx": 1368265800000, "val": 14.0}, {"col": "dominant_wave_period (s)", "idx": 1368269400000, "val": 13.0}, {"col": "dominant_wave_period (s)", "idx": 1368273000000, "val": 15.0}, {"col": "dominant_wave_period (s)", "idx": 1368276600000, "val": 16.0}, {"col": "dominant_wave_period (s)", "idx": 1368280200000, "val": 12.0}, {"col": "dominant_wave_period (s)", "idx": 1368283800000, "val": 15.0}, {"col": "dominant_wave_period (s)", "idx": 1368287400000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1368291000000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1368294600000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1368298200000, "val": 15.0}, {"col": "dominant_wave_period (s)", "idx": 1368301800000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368305400000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368309000000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368312600000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368316200000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368319800000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368323400000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368327000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368330600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368334200000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368337800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368341400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368345000000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1368348600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368352200000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368355800000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1368359400000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1368363000000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368366600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368370200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368373800000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1368377400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368381000000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368384600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368388200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368391800000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368395400000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368399000000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368402600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368406200000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368409800000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368413400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368417000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368420600000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368424200000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1368427800000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368431400000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368435000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368438600000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368442200000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368445800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368449400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368453000000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368456600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368460200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368463800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368467400000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368471000000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368474600000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1368478200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368481800000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1368485400000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1368489000000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368492600000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1368496200000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1368499800000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368503400000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1368507000000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368510600000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368514200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368517800000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1368521400000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368525000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368528600000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1368532200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368535800000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368539400000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1368543000000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368546600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368550200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368553800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368557400000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368561000000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368564600000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368568200000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368571800000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1368575400000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368579000000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368582600000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368586200000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368589800000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368593400000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368597000000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368600600000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368604200000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368607800000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368611400000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368615000000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368618600000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368622200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368625800000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368629400000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368633000000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368636600000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368640200000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368643800000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368647400000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368651000000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368654600000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368658200000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368665400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368669000000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368672600000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368676200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368679800000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368683400000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368687000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368690600000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1368694200000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1368697800000, "val": 7.0}, {"col": "dominant_wave_period (s)", "idx": 1368701400000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368705000000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368708600000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368712200000, "val": 6.0}, {"col": "dominant_wave_period (s)", "idx": 1368715800000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368719400000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368723000000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368726600000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368730200000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368733800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368737400000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368741000000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368744600000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368748200000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368751800000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368755400000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1368759000000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1368762600000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1368766200000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1368769800000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1368773400000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1368777000000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1368780600000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1368784200000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1368787800000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1368791400000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368795000000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368798600000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368802200000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368805800000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368809400000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368813000000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368816600000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368820200000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368823800000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1368827400000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1368831000000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368834600000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368838200000, "val": 11.0}, {"col": "dominant_wave_period (s)", "idx": 1368841800000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368845400000, "val": 10.0}, {"col": "dominant_wave_period (s)", "idx": 1368849000000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368852600000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368856200000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368859800000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368863400000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368867000000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368870600000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368874200000, "val": 9.0}, {"col": "dominant_wave_period (s)", "idx": 1368877800000, "val": 8.0}, {"col": "dominant_wave_period (s)", "idx": 1368881400000, "val": 9.0}]}], "height": 200, "legends": [], "marks": [{"from": {"data": "table", "transform": [{"keys": ["data.col"], "type": "facet"}]}, "marks": [{"properties": {"enter": {"stroke": {"field": "data.col", "scale": "color"}, "strokeWidth": {"value": 2}, "x": {"field": "data.idx", "scale": "x"}, "y": {"field": "data.val", "scale": "y"}}}, "type": "line"}], "type": "group"}], "padding": "auto", "scales": [{"domain": {"data": "table", "field": "data.idx"}, "name": "x", "range": "width", "type": "time"}, {"domain": {"data": "table", "field": "data.val"}, "name": "y", "nice": true, "range": "height"}, {"domain": {"data": "table", "field": "data.col"}, "name": "color", "range": "category20", "type": "ordinal"}], "width": 400},vega_289e3624be974559a0985578286a9906);
+            
+            
+        
+    
+            var circle_marker_2f6357d2271641b481157e2b0413060e = L.circleMarker(
+                [42.46647, -70.94211],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#428bca",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#428bca",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 50,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_4ead44fe38d14c11afa5ccaece865b34);
+            
+    
+            var popup_d433d54bc44f42c2b271018b046ad625 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_461e7f8d0ed348328e725c5d705d95ba = $('<div id="html_461e7f8d0ed348328e725c5d705d95ba" style="width: 100.0%; height: 100.0%;">My Birthplace</div>')[0];
+                popup_d433d54bc44f42c2b271018b046ad625.setContent(html_461e7f8d0ed348328e725c5d705d95ba);
+            
+
+            circle_marker_2f6357d2271641b481157e2b0413060e.bindPopup(popup_d433d54bc44f42c2b271018b046ad625)
+            ;
+
+            
+        
+    
+        
+        var geo_json_42f46bd2e0f9436bb2e787ec246e6dbc = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[-71.10300064086914, 42.35404065289404], [-71.09742164611816, 42.35556291928673], [-71.0910701751709, 42.357338850142156], [-71.08600616455078, 42.359368423951025], [-71.08077049255371, 42.3609539828782], [-71.07905387878418, 42.36399814386249], [-71.07587814331055, 42.36773972300433], [-71.0734748840332, 42.37236882604973], [-71.07956886291504, 42.37446132230829], [-71.08686447143553, 42.37509539831962], [-71.1009407043457, 42.37953375114589], [-71.10712051391602, 42.381055399900994], [-71.11063957214355, 42.38314760672845], [-71.11467361450195, 42.38523974383771], [-71.11879348754883, 42.38701483580215], [-71.12265586853027, 42.38644427600166], [-71.12608909606934, 42.381182202299385], [-71.1276340484619, 42.3757294679291], [-71.12565994262694, 42.37357360513729], [-71.12402915954588, 42.37078355519824], [-71.1188793182373, 42.36957872259166], [-71.11621856689453, 42.365900669578544], [-71.11630439758301, 42.361778457708425], [-71.11424446105957, 42.356831446447515], [-71.11252784729002, 42.354992073710456], [-71.1078929901123, 42.35404065289404], [-71.10368728637695, 42.3537235094212]], "type": "LineString"}, "properties": {"highlight": {}, "style": {}}, "type": "Feature"}], "type": "FeatureCollection"}
+            
+            ).addTo(map_4ead44fe38d14c11afa5ccaece865b34);
+        geo_json_42f46bd2e0f9436bb2e787ec246e6dbc.setStyle(function(feature) {return feature.properties.style;});
+        
+</script>
